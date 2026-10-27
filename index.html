@@ -44,7 +44,6 @@
     <nav class="tabs">
       <button class="tab on" data-view="newsroom">Newsroom</button>
       <button class="tab" data-view="bank">Topic Bank</button>
-      <button class="tab" data-view="research">How to Research</button>
       <button class="tab" data-view="about">About</button>
     </nav>
     <button class="gnomi-badge" id="gnomiBtn">GNOMI</button>
@@ -163,7 +162,7 @@
       <div class="panel">
         <h2>What came back</h2>
         <div class="field">
-          <label for="q1">Which method gave you the best background context? Not just an answer.</label>
+          <label for="q1">Which method gave you the best background context? No just an answer.</label>
           <select id="q1"><option value="">Choose one</option></select>
         </div>
         <div class="field" style="margin-bottom:0">
@@ -237,66 +236,6 @@
     <h1>Topic bank</h1>
     <p class="lede">Sixteen assignments, four per beat. Each one has a documented side and a contested side. That gap is where the story is.</p>
     <div id="bankList"></div>
-  </div>
-</main>
-
-<!-- ============ RESEARCH ============ -->
-<main class="view" id="view-research">
-  <div class="wrap">
-    <h1>How to research this</h1>
-    <p class="lede">Three kinds of document will do most of the work on these topics. Each one bends in a different direction.</p>
-
-    <div class="doc-type">
-      <h3>A corporate announcement</h3>
-      <p class="small muted">Press release, launch keynote, company blog post, investor deck.</p>
-      <ul>
-        <li>It is written to be quoted. Assume every number in it was chosen because it is the most favourable number available.</li>
-        <li>Look for what is missing: a date, a denominator, a comparison year, a named customer.</li>
-        <li>Separate what the company has done from what it intends to do. Intentions are not news on their own.</li>
-        <li>Find the filing underneath it. Regulatory and financial filings carry legal risk for lying, press releases do not.</li>
-      </ul>
-    </div>
-
-    <div class="doc-type">
-      <h3>A government policy paper</h3>
-      <p class="small muted">Consultation document, policy address, legislative paper, regulator guidance.</p>
-      <ul>
-        <li>Ask what is binding and what is aspirational. Most of the text is usually aspirational.</li>
-        <li>Find the commencement date and who it applies to. Phased rules are often reported as if they start now.</li>
-        <li>Check whether money is attached. A target with no budget line is a press release in longer form.</li>
-        <li>Read the consultation responses. Industry submissions tell you who is fighting what, in their own words.</li>
-      </ul>
-    </div>
-
-    <div class="doc-type">
-      <h3>An academic preprint</h3>
-      <p class="small muted">arXiv, medRxiv, SSRN, a working paper, a university press release about a study.</p>
-      <ul>
-        <li>A preprint has not been peer reviewed. Say so in your copy if you use one.</li>
-        <li>Go to the methods section: sample size, who was excluded, what the comparison group was.</li>
-        <li>Compare the press release headline to the paper's own stated limitations. The gap is often the story.</li>
-        <li>Check who funded it and whether the authors work for a company with a stake in the result.</li>
-      </ul>
-    </div>
-
-    <h2 style="margin-top:34px">Why we run one prompt through four tools</h2>
-    <p>An AI overview gives you an answer and hides the working. A search engine shows you what is ranked, and nothing more. A chatbot shows you what it can summarise, which is not the same as what exists. An agent goes and fetches, and sometimes fetches badly. Running the same words through all four shows you the shape of each tool's blind spot, and that is the skill you are keeping.</p>
-
-    <h2 style="margin-top:34px">A workflow you can repeat</h2>
-    <ol class="steps">
-      <li><b>Map the topic before you search.</b> Ask for the timeline of the story and the main actors. Treat the output as a map of where to look, not as facts you can publish.</li>
-      <li><b>Find the primary document.</b> The filing, the policy text, the paper, the incident report. Everything else is coverage of that document.</li>
-      <li><b>Find who already covered it.</b> If three outlets have the same story, your angle has to be the fourth thing. Being last is fine if you are the one who read the document.</li>
-      <li><b>Verify each link by opening it.</b> Check the publisher, the date, and whether the page actually says what you were told it says. AI tools invent plausible citations.</li>
-      <li><b>Find the contradiction.</b> Two sources that cannot both be right is a reporting lead. Write down who you would call about it.</li>
-    </ol>
-
-    <h2 style="margin-top:34px">Follow up prompts worth keeping</h2>
-    <div class="prompt-box">Give me a timeline of this story over the last 24 months, with the date and the publisher for each event, and tell me which events you are least confident about.</div>
-    <div class="prompt-box">Who are the named actors in this story and what does each of them gain or lose from the outcome.</div>
-    <div class="prompt-box">What is the primary source document behind this coverage, and where is it published.</div>
-    <div class="prompt-box">What has not been reported about this. What questions are the existing articles leaving unanswered.</div>
-    <p class="small muted" style="margin-top:16px">Then open every link it gives you. A citation you did not click is not a citation.</p>
   </div>
 </main>
 

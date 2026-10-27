@@ -183,16 +183,6 @@ textarea{resize:vertical;min-height:84px;line-height:1.5}
 .bank-item p{font-size:14px;margin:0 0 8px;color:#c6c6d0}
 .bank-item .tension-line{font-size:13px;color:var(--muted);margin:0}
 
-/* ---------- research tab ---------- */
-.doc-type{border:1px solid var(--line);background:var(--panel);padding:22px;margin-bottom:14px}
-.doc-type h3{font-size:17px;color:#c3aef5}
-.doc-type ul{margin:10px 0 0;padding-left:20px}
-.doc-type li{font-size:14px;margin-bottom:7px;max-width:72ch}
-.steps{counter-reset:s;padding:0;margin:0;list-style:none}
-.steps li{counter-increment:s;position:relative;padding-left:40px;margin-bottom:18px;max-width:72ch}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border:1px solid var(--purple-line);color:#c3aef5;font-size:13px;display:flex;align-items:center;justify-content:center}
-.prompt-box{background:#1b1b1f;border:1px solid var(--line);padding:14px 16px;font-size:14px;color:#c6c6d0;margin-bottom:10px}
-
 /* ---------- modal ---------- */
 .scrim{display:none;position:fixed;inset:0;background:rgba(10,10,12,.72);z-index:60;align-items:center;justify-content:center;padding:24px}
 .scrim.on{display:flex}
