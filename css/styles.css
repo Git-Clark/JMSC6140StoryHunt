@@ -91,8 +91,9 @@ p{margin:0 0 14px;max-width:72ch}
 .beat span{display:block;font-size:13px;color:var(--muted);line-height:1.45}
 
 /* ---------- editor desk ---------- */
-.desk{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:start}
-.portrait{width:200px;height:240px;border:1px dashed var(--line);background:#202024;display:flex;align-items:center;justify-content:center;text-align:center;color:#6c6c78;font-size:12px;padding:16px}
+.desk{display:grid;grid-template-columns:240px 1fr;gap:26px;align-items:start}
+.portrait{width:240px;height:298px;border:1px solid var(--line);background:#202024;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
 .speech{border-left:3px solid var(--purple);padding-left:18px}
 .speech p:last-of-type{margin-bottom:0}
 .placeholder-note{font-size:12px;color:#6c6c78;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
@@ -212,7 +213,7 @@ textarea{resize:vertical;min-height:84px;line-height:1.5}
   .beats{grid-template-columns:1fr 1fr}
   .methods{grid-template-columns:1fr 1fr}
   .desk{grid-template-columns:1fr}
-  .portrait{width:100%;height:170px}
+  .portrait{width:100%;height:260px}
   .grid2,.grid3{grid-template-columns:1fr}
   .landing h1{font-size:36px}
   .landing-top{flex-direction:column;align-items:flex-start;gap:22px}

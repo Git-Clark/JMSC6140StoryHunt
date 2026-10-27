@@ -28,6 +28,7 @@ function load(){
 function $(id){ return document.getElementById(id); }
 function topicsFor(beat){ return TOPICS.filter(function(t){ return t.beat === beat; }); }
 function beatName(id){ for(var i=0;i<BEATS.length;i++){ if(BEATS[i].id===id) return BEATS[i].name; } return ""; }
+function beatPhoto(id){ for(var i=0;i<BEATS.length;i++){ if(BEATS[i].id===id) return BEATS[i].photo || ""; } return ""; }
 function beatIcon(id){ for(var i=0;i<BEATS.length;i++){ if(BEATS[i].id===id) return BEATS[i].icon; } return "ico-news"; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function promptFor(topic){ return PROMPT_TEMPLATE.replace("{TOPIC}", topic ? (topic.promptName || topic.title) : ""); }
@@ -56,7 +57,7 @@ function goStage(n){
     rail[r].classList.toggle("on", r===n);
     rail[r].classList.toggle("done", r<n);
   }
-  if(n===2) $("editorBeat").textContent = beatName(S.beat) + " desk";
+  if(n===2) renderDesk();
   if(n===3) renderWheelStage();
   if(n===4) renderPromptCheck();
   if(n===5) renderSources();
@@ -92,6 +93,14 @@ function renderBeats(){
   }
 }
 $("beatNext").addEventListener("click", function(){ goStage(2); });
+
+/* ---------- editor desk ---------- */
+function renderDesk(){
+  $("editorBeat").textContent = beatName(S.beat) + " desk";
+  var img = $("editorPhoto"), src = beatPhoto(S.beat);
+  if(src){ img.src = src; img.style.display = ""; }
+  else { img.removeAttribute("src"); img.style.display = "none"; }
+}
 
 /* ---------- assignment card ---------- */
 function assignmentHTML(){

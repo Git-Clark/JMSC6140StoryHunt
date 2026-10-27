@@ -17,13 +17,13 @@ var METHODS = [
 ];
 
 var BEATS = [
-  {id:"hk",   name:"Local HK",      icon:"ico-hk",
+  {id:"hk",   name:"Local HK",      icon:"ico-hk",   photo:"assets/editors/hk.jpg",
    blurb:"Hong Kong stories. Government papers, Legco filings, and the people who live next to the project."},
-  {id:"tech", name:"Tech",          icon:"ico-tech",
+  {id:"tech", name:"Tech",          icon:"ico-tech", photo:"assets/editors/tech.jpg",
    blurb:"Companies, products and model policy. Announcements written to be quoted."},
-  {id:"eco",  name:"Eco News",      icon:"ico-eco",
+  {id:"eco",  name:"Eco News",      icon:"ico-eco",  photo:"assets/editors/eco.jpg",
    blurb:"Climate, energy and cities. Targets are easy to announce and hard to fund."},
-  {id:"intl", name:"International", icon:"ico-intl",
+  {id:"intl", name:"International", icon:"ico-intl", photo:"assets/editors/intl.jpg",
    blurb:"Politics, security and regulation across borders. Verification is the whole job."}
 ];
 

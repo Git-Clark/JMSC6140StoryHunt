@@ -13,7 +13,7 @@ index.html          the whole interface, all stages, and the icon sprite
 css/styles.css      all styling
 js/data.js          all content: beats, 16 topics, the prompt template, source types
 js/app.js           app logic: wheel, tabs, validation, summary, copy
-assets/             the original newspaper icon as supplied
+assets/             the newspaper icon, and the four editor photos in assets/editors
 ```
 
 ## Running it locally
@@ -38,7 +38,7 @@ Everything students read in the game, apart from the editor dialogue, lives in `
 - **Padlet link**: edit `PADLET`.
 - **GNOMI link**: edit `GNOMI_URL`.
 
-The editor's name, portrait placeholder and dialogue are in `index.html`, in the section marked `<!-- 2 desk -->`.
+The editor's name and dialogue are in `index.html`, in the section marked `<!-- 2 desk -->`. Each beat's editor photo is set by the `photo` field in `BEATS` in `js/data.js`, pointing at a file in `assets/editors`.
 
 ## Pushing to GitHub
 
